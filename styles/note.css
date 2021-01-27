@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #EBEBEB;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C7C32;
+}
+
+#navbar a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-image {
+    height: 100%;
+}
+
+#logo-text {
+    font-weight: 900;
+    font-size: 50px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+#saved-at {
+    color: #3dcc5d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#note-title {
+    background-color: #dbd9d9;
+    width: 70%;
+    text-align: left;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#note-content {
+    background-color: #F8F9FA;
+    width: 70%;
+    height: 70vh;
+    text-align: justify;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px;
+    font-weight: 300;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#page-content {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    background: #F8F9FA;
+    border: none;
+    outline: 0;
+    font-size: 20px;
+}
+
+#page-content::-webkit-scrollbar {
+    width: 10px;
+    margin-left: 5px;
+} 
+
+#page-content::-webkit-scrollbar-thumb {   
+    background-color: darkgrey;   
+}
+
+#developer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #C5C5C5;
+    font-size: 20px;
+}
+
+#developer a {
+    text-decoration: none;
+    color: #bababa;
+}
+
+#developer a :hover {
+    text-decoration: none;
+    color: #08260e;
+}
+
+
+@media ( max-width: 600px ) {
+
+    #logo-text {
+        font-weight: 900;
+        font-size: 25px;
+    }
+}

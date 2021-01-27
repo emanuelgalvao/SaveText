@@ -2,14 +2,14 @@
 
     include "controller/ReenderController.php";
 
-    $rote = $_SERVER['REQUEST_URI'];
+    $route = $_SERVER['REQUEST_URI'];
     
     $reenderController = new ReenderController();
 
-    if($rote == ""){
+    if($route == "/"){
         $reenderController->ReenderIndex();
     }else{
-        $reenderController->ReenderNote();
+        $reenderController->ReenderNote($route);
     }
 
 ?>

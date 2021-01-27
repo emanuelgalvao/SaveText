@@ -1,8 +1,9 @@
-CREATE DATABASE onlinenote;
+CREATE DATABASE savetext;
 
-USE onlinenote;
+USE savetext;
 
-CREATE TABLE notes{
-    rote VARCHAR(100) NOT NULL PRIMARY KEY,
-    note TEXT
-}
+CREATE TABLE notes (
+    route_url VARCHAR(100) NOT NULL PRIMARY KEY,
+    note_content TEXT,
+    saved_at DATETIME
+)

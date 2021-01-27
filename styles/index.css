@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+body {
+    background-color: #1C7C32;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-image {
+    height: 250px;
+    margin-top: 30px;
+}
+
+#logo-text {
+    font-weight: 900;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+#note-route {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #A6A6A6;
+    margin-bottom: 40px;
+}
+
+#root-route {
+    background-color: #E5E5E5;
+    text-align: center;
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px 5px 10px 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#route {
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    font-size: 25px;
+    width: 200px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+#button-go {
+    background-color: #246833;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#button-go:hover {
+    cursor: pointer;
+    background-color: #15401e;
+}
+
+#how-it-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hiw-title {
+    background-color: #E5E5E5;
+    width: 70vw;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #1C7C32;
+}
+
+#hiw-content {
+    background-color: #F8F9FA;
+    width: 70vw;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#hiw-content strong{
+    color: #1C7C32;
+}
+
+#developer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: #C5C5C5;
+    font-size: 20px;
+}
+
+#developer a {
+    text-decoration: none;
+    color: #bababa;
+}
+
+#developer a :hover {
+    text-decoration: none;
+    color: #08260e;
+}
+
+@media ( max-width: 600px ) {
+
+    #logo-image {
+        height: 100px;
+    }
+    
+    #route {
+        width: 100px;
+    }
+
+    #hiw-title, #hiw-content {
+        width: 70vw;
+    }
+
+    #logo-text {
+        font-weight: 900;
+        font-size: 30px;
+    }
+}
+
+@media ( min-width: 600px ) {
+
+    #hiw-title, #hiw-content {
+        max-width: 800px;
+    }
+}
